@@ -3,7 +3,7 @@ def my_select(array)
   new_arr = []
   while i < array.length
     if yield(array[i]) == true
-      new_arr << yield(coll[i])
+      new_arr << yield(array[i])
     i += 1
   end
   new_arr
